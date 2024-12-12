@@ -1,0 +1,5 @@
+ec\edu\ups\appdis\ejbclient\Main.class
+org\jboss\tools\examples\model\Member.class
+ec\edu\ups\appdis\ejbclient\Main$2.class
+org\jboss\tools\examples\service\MemberRegistrationRemote.class
+ec\edu\ups\appdis\ejbclient\Main$1.class
