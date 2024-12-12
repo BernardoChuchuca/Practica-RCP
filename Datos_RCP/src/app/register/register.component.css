@@ -1,0 +1,63 @@
+.custom-table {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.custom-table thead {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+}
+
+.custom-table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.custom-table tbody td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.custom-table th, .custom-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+.custom-form {
+  background: linear-gradient(to bottom, #f9f9f9, #e8f0fe);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.custom-form label {
+  font-weight: bold;
+  color: #555;
+}
+
+.custom-form input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.custom-form input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.custom-form button {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.custom-form button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,79 @@
+<div class="container mt-4">
+  <!-- Título principal -->
+  <h2 class="text-center mb-4">Registrar Persona</h2>
+
+  <!-- Formulario de registro -->
+  <form (ngSubmit)="onRegister()" class="p-4 border rounded shadow-sm custom-form">
+    <div class="form-group mb-3">
+      <label for="email" class="form-label">Correo Electrónico:</label>
+      <input
+        type="email"
+        id="email"
+        [(ngModel)]="email"
+        name="email"
+        class="form-control"
+        placeholder="Ingrese su correo electrónico"
+        required
+      />
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="name" class="form-label">Nombre:</label>
+      <input
+        type="text"
+        id="name"
+        [(ngModel)]="name"
+        name="name"
+        class="form-control"
+        placeholder="Ingrese su nombre completo"
+        required
+      />
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="phone" class="form-label">Teléfono:</label>
+      <input
+        type="text"
+        id="phone"
+        [(ngModel)]="phone"
+        name="phone"
+        class="form-control"
+        placeholder="Ingrese su número de teléfono"
+        required
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100">Registrar</button>
+  </form>
+
+  <!-- Mensaje de estado -->
+  <div *ngIf="message" class="alert alert-info mt-3" role="alert">
+    {{ message }}
+  </div>
+
+  <!-- Sección de lista de personas -->
+  <h2 class="text-center mt-5 mb-4">Lista de Personas</h2>
+  <table class="table table-striped table-hover shadow-sm custom-table">
+    <thead class="table-primary">
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Correo</th>
+        <th>Teléfono</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let miembro of miembros">
+        <td>{{ miembro.id }}</td>
+        <td>{{ miembro.name }}</td>
+        <td>{{ miembro.email }}</td>
+        <td>{{ miembro.phoneNumber }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="text-center mt-4">
+
+  </div>
+</div>
